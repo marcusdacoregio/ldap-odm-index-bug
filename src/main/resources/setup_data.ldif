@@ -1,0 +1,28 @@
+dn: dc=spring,dc=io
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+
+dn: c=Sweden,dc=spring,dc=io
+objectclass: top
+objectclass: country
+c: Sweden
+description: The country of Sweden
+
+dn: ou=company1,c=Sweden,dc=spring,dc=io
+objectclass: top
+objectclass: organizationalUnit
+ou: company1
+description: First company in Sweden
+
+dn: cn=Some Person,ou=company1,c=Sweden,dc=spring,dc=io
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+uid: some.person
+userPassword: password
+cn: Some Person
+sn: Person
+description: Sweden, Company1, Some Person
+telephoneNumber: +46 555-123456
